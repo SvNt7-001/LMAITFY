@@ -1,0 +1,23 @@
+/* Custom CSS for the modal backdrop and animation indicator */
+
+/* Make the backdrop slightly blurred for a modern modal effect */
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px); /* For older WebKit browsers */
+}
+
+/* Define the blinking animation for the "..." indicator */
+@keyframes pulse {
+    0%, 100% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+/* Apply the custom animation to the typing indicator */
+#typing-indicator {
+    animation: pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

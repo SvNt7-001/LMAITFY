@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let Me Ai That For You</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Configure Tailwind to include custom colors before loading the CSS
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'ai-blue': '#4285F4',
+                        'ai-green': '#00A67C',
+                        'ai-purple': '#7B16FF',
+                        'alert-red': '#D93025',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Specific modal styles needed because the original HTML removed the <link rel="stylesheet" href="style.css"> */
+        dialog::backdrop {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        dialog {
+            border: none;
+            padding: 0;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center justify-center p-4">
+
+    <div id="main-content" class="bg-white p-8 rounded-xl shadow-2xl max-w-lg w-full text-center">
+        <h1 class="text-5xl font-extrabold text-gray-800 mb-2">Let Me "Ai" That For You</h1>
+        <p class="text-gray-500 mb-8">You really couldn't ask the Ai yourself?</p>
+
+        <form id="search-form" class="space-y-4">
+            <input 
+                type="text" 
+                id="query-input" 
+                placeholder="Type your question here..." 
+                required
+                class="w-full px-5 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-ai-blue text-lg transition duration-200"
+            >
+            <button 
+                type="submit"
+                class="w-full bg-gray-500 text-white font-bold py-3 rounded-lg hover:bg-gray-600 transition duration-200 shadow-md hover:shadow-lg focus:ring-4 focus:ring-gray-400 text-xl flex items-center justify-center space-x-3"
+            >
+                <span class="text-2xl">🤔</span>
+                <span>Choose Your Ai Assistant</span>
+            </button>
+        </form>
+    </div>
+
+    <dialog id="ai-modal" class="rounded-xl shadow-2xl backdrop:backdrop-blur-sm p-6 w-full max-w-md">
+        <div class="text-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-2">Choose Your Assistant</h2>
+            <p class="text-gray-600 mb-6">Select which AI will answer the question:<br>Or<br>Copy the share Link to share with a friend.</p>
+            
+            <div id="ai-buttons-container" class="space-y-4">
+            </div>
+            
+            <button id="close-modal" class="mt-8 text-sm text-gray-500 hover:text-gray-700">
+                Cancel
+            </button>
+        </div>
+    </dialog>
+
+    <div id="animation-area" class="hidden fixed inset-0 bg-white flex flex-col items-center justify-center p-8 text-center z-50">
+        <h2 class="text-4xl font-bold text-gray-800 mb-6">Fine, I'll Ask It For You</h2>
+        <p id="typed-text" class="text-2xl font-semibold text-gray-700 min-h-[3rem] mb-4"></p>
+        <p id="typing-indicator" class="text-5xl text-ai-blue opacity-0 transition duration-500 animate-pulse">...</p>
+        <div class="w-full max-w-md mx-auto">
+             <div id="instructions" class="text-lg text-gray-500 mt-6 mb-8">Just watching the magic happen...</div>
+             <div id="open-ai-button-container"></div>
+        </div>
+    </div>
+    
+    <footer class="mt-8 text-center w-full max-w-lg">
+        <p class="text-sm text-gray-500">&copy; LMAITFY 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
