@@ -1,6 +1,6 @@
 # Let Me "Ai" That For You (LMAITFY) 💡
 
-[![GitHub Pages Status](https://github.com/YourUsername/YourRepoName/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/YourUsername/YourRepoName/actions/workflows/pages/pages-build-deployment)
+[![GitHub Pages Status](https://github.com/SvNt7-001/LMAITFY/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/SvNt7-001/LMAITFY/actions/workflows/pages/pages-build-deployment)
 
 You really couldn't ask the AI yourself?
 
