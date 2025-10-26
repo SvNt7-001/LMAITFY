@@ -15,7 +15,6 @@ It generates a single, shareable URL that encodes a specific question for a spec
 See the project live and try it out:
 > **[https://SvNt7-001.github.io/LMAITFY/](https://svnt7-001.github.io/LMAITFY/)**
 
-*(Remember to replace `[Your-GitHub-Username]` and `[Your-Repo-Name]` with your actual information.)*
 
 ---
 
