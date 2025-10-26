@@ -63,7 +63,7 @@ This is a static site and does not require a build step or local server.
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/](https://github.com/)[Your-GitHub-Username]/[Your-Repo-Name].git
+    git clone [https://github.com/](https://github.com/)SvNt7/LMAITFY.git
     ```
 2.  **Open the files:**
     Open `index.html` directly in your web browser.
