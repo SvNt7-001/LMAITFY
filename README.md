@@ -13,7 +13,7 @@ It generates a single, shareable URL that encodes a specific question for a spec
 ## 🚀 Live Demo
 
 See the project live and try it out:
-> **https://[Your-GitHub-Username].github.io/[Your-Repo-Name]/**
+> **https://https://svnt7-001.github.io/LMAITFY/**
 
 *(Remember to replace `[Your-GitHub-Username]` and `[Your-Repo-Name]` with your actual information.)*
 
